@@ -1,0 +1,8 @@
+# only for tests/selftest.py: a pure-Python MQTT broker to run the simulator against
+-r requirements.txt
+amqtt==0.12.1
+pydantic==2.6.1
+
+# optional: lets tests/selftest.py also run every simulated message through the real receiver code
+pika==1.3.2
+influxdb-client==1.38.0
